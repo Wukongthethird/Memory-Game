@@ -1,0 +1,62 @@
+/* you can add to or change this. */
+h1{
+  text-align: center;
+}
+
+
+.game{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 75%;
+  height: 500px;
+  margin: auto;
+  perspective: 1000px;
+
+}
+
+
+.cards{
+  width: 20%;
+  height: 50%;
+  vertical-align: top;
+  position: relative;
+  border: 5px darkgreen;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.cards.flipped{
+  transform: rotateY(180deg);
+}
+
+.cards:active{
+  transform: scale(.95);
+  transition:  transform .2s;
+} 
+
+
+.frontImg,
+.backImg{
+  width: 100%;
+  height: 100%;
+  position:absolute;  
+  backface-visibility: hidden;
+  border: 2px solid deeppink;
+  background-size: cover;
+}
+
+.frontImg{
+  transform: rotateY(180deg)
+}
+
+
+
+
+
+
+
+
+
+
