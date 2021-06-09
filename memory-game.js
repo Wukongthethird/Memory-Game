@@ -68,7 +68,7 @@ function createCards(colors) {
       let backImg = document.createElement( 'img' );
 
       backImg.setAttribute('class','backImg')
-      backImg.setAttribute('src', 'blank.png')
+      backImg.setAttribute('src', 'images/blank.png')
       frontImg.setAttribute('class','frontImg')
       frontImg.setAttribute('src', 'images/' + colors[i]+'.png')    
 
